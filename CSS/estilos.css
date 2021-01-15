@@ -92,7 +92,7 @@ header{
             width: 100%;
             height: 500px;
             position: relative;
-            top: 80px;
+            margin-top: 80px;
             background-image: url(../img/portada.jpg);
             background-position: center;
             background-size: cover;
@@ -133,4 +133,159 @@ header{
             color: #fff;
             font-size: 20px;
             font-weight: 300;
+}
+
+/*Contenedor del articulo*/
+.container-content{
+            width: 1200px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: center;
+            display: flex
+
+}
+
+article{
+ width: 100%;
+ padding: 20px;
+ padding-bottom: 40px;
+ box-shadow: -10px 0 2px -30px black;
+ border-radius: 6px;
+ position: relative;
+ overflow: hidden;
+}
+
+article::before{
+            content: '';
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #46a2fd;
+}
+
+article h1{
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 40px;
+}
+
+article p{
+            margin-top: 20px;
+            font-size: 18px;
+            color: #3c3c3c;
+}
+
+article img{
+            width: 100%;
+            margin-top: 20px;
+
+}
+
+/*Aside de los articulos relacionados*/
+.container-aside aside{
+            width: 320px;
+            border-radius: 6px;
+            box-shadow: 0 0 20px -20px black;
+            overflow: hidden;
+            margin-left: 40px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+} 
+
+.container-aside aside img{
+            width: 100%;
+            height: 50%;
+}
+
+.container-aside aside h2,
+.container-aside aside p{
+            margin-top: 20px;
+            padding: 0px 20px;
+            font-size: 18px;
+}
+
+.container-aside aside button{
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 10px 50px;
+            font-size: 16px;
+            background: #46a2fd;
+            border: none;
+            color:#fff;
+            cursor: pointer;
+            border-radius: 6px;
+}
+
+.container-aside aside button:hover{
+            opacity: 0.9;
+}
+
+/*Footer - pie de pagina*/
+.container-footer{
+            width: 100%;
+            padding: 40px 0;
+            background: #f7f7f7;
+            margin-top: 40px;
+}
+
+.container-footer footer{
+            max-width: 1200px;
+            margin: auto;
+}
+
+.container-footer footer .logo-footer{
+            text-align: center;
+}
+
+.container-footer footer .logo-footer img{
+            width: 100px;
+}
+
+.container-footer footer .redes-footer{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+            font-size: 20px;
+            margin: 20px;
+            background: #efefef;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            color: #a2a2a2;
+}
+
+footer .redes-footer .fa-facebook-f:hover{
+            background: #41579a;
+            color: #fff;
+}
+footer .redes-footer .fa-instagram:hover{
+            background: linear-gradient(to top, #fcde30, #e9712a,#D2313B,#ae4198,#7540A1,#5443A8);
+            color: #fff;
+}
+footer .redes-footer .fa-youtube:hover{
+            background: #de4c34;
+            color: #fff;
+}
+
+.container-footer footer hr{
+            margin-top: 20px;
+            border: none;
+            height: 2px;
+            background: #c0c0c07a;
+}
+
+.container-footer h4{
+            text-align: center;
+            margin-top: 40px;
+            color: #8e8e8e;
+            font-weight: 500;
+            font-size: 18px;
 }
