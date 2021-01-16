@@ -2,12 +2,19 @@
 <html lang="es">
 <head>
             <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            -->
+            
+
             <title>PAGINA TIPO BLOG</title>
 
             <script src="https://kit.fontawesome.com/02a817985d.js" crossorigin="anonymous"></script>
 
-            <link rel="stylesheet" href="CSS/estilos.css">          
+            <link rel="stylesheet" href="CSS/estilos.css">
+            
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 </head>
 <body>
 
@@ -18,7 +25,7 @@
                                                 <h1>BAA<b>DOO</b></h1>
                                     </div>                        
                                     
-                                    <div class="menu">
+                                    <div class="menu" id="show-menu">
                                       <nav>
                                                   <ul>
                                                               <li><a href="#">Inicio</a></li>
@@ -33,11 +40,18 @@
                                     </div>
                                                 
                         </div>
+                        
+                      <div id="icon-menu">
+                        <i class="fas fa-bars"></i>
+                      </div>
 
 
             </header>
 
             <!--Portada-->
+      <div class="container-all" id="move-content">
+
+            
             <div class="container-cover">
                         <div class="conteiner-info-cover">
                                     <h1>¡Con Dios Todo es posible!</h1>
@@ -99,7 +113,7 @@
             <div class="container-footer">
               <footer>
                 <div class="logo-footer">
-                   <img src="" alt="">
+                   <img src="img/logo.jpg" alt="">
                 </div>
                 <div class="redes-footer">
                    <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
@@ -110,8 +124,9 @@
                   <h4> © 2020 Empresa - Todos los derechos Reservados</h4>
               </footer>
             </div>
+      </div>
 
-            
+            <script src="js/script.js"></script>
             
 </body>
 </html>
